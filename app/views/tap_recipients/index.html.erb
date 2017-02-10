@@ -1,0 +1,8 @@
+<h1>Tuition Assitance Program Recipients</h1>
+<%= @tap_recipients.each do |recipient| %>
+  <p>Income Bracket: <%= recipient["income_by_1_000_range"] %></p>
+  <p>Institution: <%= recipient["sector_type"] %></p>
+  <p>Study Length: <%= recipient["tap_level_of_study"] %></p>
+  <p>Amount Received: <%= recipient["tap_recipient_dollars"] %></p>
+  <p>____________</p>
+<% end %>
